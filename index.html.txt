@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Portfolio de RandomBarnab</title>
+    <style>
+        :root {
+            --bg-color: #f4f4f9;
+            --text-color: #333;
+            --card-bg: #ffffff;
+            --card-hover: #eef2ff;
+            --accent-color: #4f46e5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
+
+        p.subtitle {
+            color: #666;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 16px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--text-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+            border: 1px solid #eaeaea;
+        }
+
+        .link-card:hover {
+            transform: translateY(-3px);
+            background-color: var(--card-hover);
+            box-shadow: 0 6px 12px rgba(79, 70, 229, 0.15);
+            border-color: var(--accent-color);
+        }
+
+        .icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .text-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .link-desc {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0;
+            line-height: 1.4;
+        }
+        
+        .footer {
+            margin-top: 50px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mes Projets & Outils</h1>
+        <p class="subtitle">Découvrez mes applications, visualisations de données et outils interactifs.</p>
+    </header>
+
+    <div class="links-container">
+        
+        <!-- Copernicus -->
+        <a href="https://randombarnab.github.io/timelapscopernicus/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">🛰️</span>
+            <div class="text-content">
+                <span class="link-title">Générateur de Timelapse Copernicus</span>
+                <span class="link-desc">Outil cartographique avec calques satellites pour générer et exporter des timelapses de l'évolution de n'importe quelle zone.</span>
+            </div>
+        </a>
+
+        <!-- Sécurité Routière -->
+        <a href="https://randombarnab.github.io/frenchroadincidentdatavisualisation/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">🚗</span>
+            <div class="text-content">
+                <span class="link-title">Sécurité Routière France - DataViz</span>
+                <span class="link-desc">Tableaux de bord statistiques et GPS de dangerosité pour explorer et analyser les accidents de la route en France.</span>
+            </div>
+        </a>
+
+        <!-- Cartes Topographiques -->
+        <a href="https://randombarnab.github.io/Topographic-GeolMap/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">⛰️</span>
+            <div class="text-content">
+                <span class="link-title">Carte Rando Pro V33</span>
+                <span class="link-desc">Outil d'exploration de cartes topographiques et géologiques avec calcul de distance et dénivelé pour la randonnée.</span>
+            </div>
+        </a>
+
+        <!-- Météo Événementiel (GitHub Repo) -->
+        <a href="https://github.com/RandomBarnab/StatistiquesMeteoOrganisationEvenement" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">🌤️</span>
+            <div class="text-content">
+                <span class="link-title">Stats Météo pour Événements</span>
+                <span class="link-desc">Dépôt GitHub contenant une application d'analyse de données météorologiques pour l'organisation d'événements.</span>
+            </div>
+        </a>
+
+        <!-- Pomodoro Tracker -->
+        <a href="https://randombarnab.github.io/pomodorotrack/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">🍅</span>
+            <div class="text-content">
+                <span class="link-title">Pomodoro Tracker</span>
+                <span class="link-desc">Outil de gestion du temps et de productivité avec des cycles de travail et de repos programmables.</span>
+            </div>
+        </a>
+
+        <!-- Sea Plastics -->
+        <a href="https://randombarnab.github.io/seaplasticsbioaccumulation/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">🐢</span>
+            <div class="text-content">
+                <span class="link-title">Sea Plastics Bioaccumulation</span>
+                <span class="link-desc">Projet autour de la bioaccumulation des plastiques en mer. (Le site semble actuellement inaccessible)</span>
+            </div>
+        </a>
+
+        <!-- Vibe Matcher -->
+        <a href="https://randombarnab.github.io/VibeMatcher/" class="link-card" target="_blank" rel="noopener">
+            <span class="icon">✨</span>
+            <div class="text-content">
+                <span class="link-title">Vibe Matcher</span>
+                <span class="link-desc">Application web pour comparer ou associer des affinités/vibes. (Le site renvoie actuellement une erreur 404)</span>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        Créé par RandomBarnab • Hébergé sur GitHub Pages
+    </div>
+
+</body>
+</html>
